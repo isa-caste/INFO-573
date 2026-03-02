@@ -1,0 +1,9 @@
+# Assignment 5
+The purpose of this code was to analyze data for different genes expressed in normal and tumor tissue.  <br/>
+### Task 1 <br/>
+For Task 1, data from gene expression, gene information, and sample information files were loaded, cleaned, and merged. Sample names were updated based on phenotype mappings to distinguish between tumor and normal samples for consistent data analysis. The code includes calculations for renaming genes in the table and further exploring the data by separating normal and tumor samples to calculate gene expression. Additionally, the fold change for each row between the tumor and normal data was calculated, and an analysis was performed to determine whether the genes were expressed higher in tumor or normal samples. <br/>
+### Task 2 <br/>
+For Task 2, this code contains visualizations based on the analysis performed in Task 1. The bar graphs in parts b and c are the same because, after filtering rows with a fold change value greater than 5, all genes were found to be higher expressed in tumors, leaving none for the normal data. A heatmap was then created to display the expression levels of the genes. Lastly, a cluster map was generated from the same data used for the heatmap. To prevent crashes caused by the dataset's large size, a smaller subset of the data was used for both the heatmap and the clustered heatmap, ensuring computational efficiency without compromising the analysis. <br/>
+- Write a few sentence explaining the findings of your analysis, feel free to reference any of visualizations <br/>
+
+The analysis showed that genes with a fold change above 5 were typically higher expressed in tumors. Bar plots and heatmaps highlighted distinct chromosome activity and gene expression patterns, showing differences between tumor and normal samples.
